@@ -16,6 +16,6 @@ jobs:
       - name: Run Notification
         env:
           HEALTH_STATUS: ${{ join(steps.health_check.outputs.*, '\n') }}
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
         id: notifcation
         run: bash ./script/notification.sh
