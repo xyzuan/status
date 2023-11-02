@@ -1,4 +1,4 @@
-name: Scheduled Health Check
+name: xyzscape Infrastructure
 on:
   workflow_dispatch:
   schedule:
